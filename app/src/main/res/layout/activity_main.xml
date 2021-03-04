@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progress_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+<LinearLayout
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_16sdp"
+        android:background="@drawable/et_style"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/mail"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:background="@drawable/et_style"
+        android:hint="@string/mail"
+        android:paddingLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      app:passwordToggleEnabled="true"
+       app:passwordToggleTint="@color/black"
+        app:hintEnabled="false"
+       android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_10sdp">
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:textSize="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:background="@drawable/et_style"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:text="@string/Signup_btn"
+        android:textSize="@dimen/_15sdp"
+        android:background="@drawable/background_btn"
+        android:layout_marginVertical="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/already_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_account"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/go_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_login"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+</FrameLayout>

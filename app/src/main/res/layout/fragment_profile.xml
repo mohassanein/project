@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.profile.ProfileFragment"
+    >
+
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:textStyle="bold"
+        android:hint="@string/username"
+        android:textColorHint="@color/black"
+        android:background="@drawable/et_style"
+        android:layout_gravity="center"
+        android:gravity="fill"
+        android:paddingLeft="@dimen/_16sdp"
+       />
+
+</FrameLayout>
